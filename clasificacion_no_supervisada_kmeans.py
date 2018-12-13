@@ -15,6 +15,9 @@ def isin(element, test_elements, assume_unique=False, invert=False):
     return np.in1d(element, test_elements, assume_unique=assume_unique, invert=invert).reshape(element.shape)
 
 
+normalized=False
+
+minValid=1
 
 
 #Calcular el compuesto de medianas para cada uno de las entradas
